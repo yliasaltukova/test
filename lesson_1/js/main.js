@@ -12,13 +12,15 @@ var appData = {
     moneyData: money,
     timeData: time,
     expenses: {
-        firstQuestion: firstVar,
-        secondQuestion: secondVar
+    
     },
     optionalExpenses: {},
     income :[],
     savings: false
 };
+
+appData.expenses[firstQuestion] = firstVar;
+appData.expenses[secondQuestion] = secondVar;
 
 alert (money/30);
 
