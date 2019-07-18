@@ -19,8 +19,8 @@ var appData = {
     savings: false
 };
 
-appData.expenses[firstQuestion] = firstVar;
-appData.expenses[secondQuestion] = secondVar;
+appData.expenses[firstQuestion]= firstVar;
+appData.expenses[secondQuestion]= secondVar;
 
 alert (money/30);
 
