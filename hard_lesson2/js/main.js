@@ -1,7 +1,7 @@
-'use strict';
+
 
 //первый пункт 
-let week = [
+/*let week = [
     document.write("Понедельник".italics()) ,
     document.write("Вторник") ,
     document.write("Среда") ,
@@ -17,4 +17,8 @@ let arr =  ["3456" , "98456" , "75643" , "65432" , "09456" ,"30734" , "65432"];
 
 console.log( arr[0]);
 console.log( arr[2]);
-console.log( arr[5]);
+console.log( arr[5]);*/
+
+
+
+alert( +"Infinity" );
