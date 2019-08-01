@@ -61,12 +61,33 @@ let appData = {
         alert("Ответ 1: " + appData.optionalExpenses.c);
         alert("Ответ 2: " + appData.optionalExpenses.d);
         alert("Ответ 3: " + appData.optionalExpenses.e);
+    },
+    chooseIncome: function() {
+        let items = prompt("Что принесет доп. доход?", '');
+
+        if((typeof(items)) === 'string' && items != '' && (typeof (items)) !=null) {
+            appData.income =items.split(', ');
+            appData.income.forEach(function(item, i, income){
+            alert('Способ доп.заработка: ' + item);
+            });
+        } else {
+            alert("Not done!");
+        }
+        
     }
-    
 };
 
 
+appData.chooseExpenses();
+appData.detectDayBudget();
+appData.detectLevel();
+appData.chooseOptExpenses();
+appData.chooseIncome();
 
 appData.moneyPerDay = (appData.moneyData / 30).toFixed();
 
 alert("Ежедневный бюджет: " + appData.moneyPerDay);
+
+for (let key in appData) {
+    console.log('Наша программа включает в себя данные: ' + key + ': ' + appData[key]);
+}
